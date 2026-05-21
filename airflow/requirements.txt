@@ -1,0 +1,6 @@
+apache-airflow==2.7.3
+apache-airflow-providers-postgres==5.10.1
+apache-airflow-providers-http==4.7.1
+psycopg2-binary==2.9.9
+requests==2.31.0
+pyyaml==6.0.1
