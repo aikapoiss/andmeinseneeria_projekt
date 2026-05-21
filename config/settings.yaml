@@ -1,0 +1,28 @@
+# TfL BikePoint API seaded
+api:
+  base_url: "https://api.tfl.gov.uk"
+  bikepoint_endpoint: "/BikePoint"
+  timeout: 10
+  retry_attempts: 3
+
+# Andmete kogumise seaded
+collector:
+  interval_seconds: 60  # API kutseid iga 60 sekundi järel
+  max_retries: 3
+  backoff_factor: 2
+
+# Andmete talletamise seaded
+storage:
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  metadata_file: "data/metadata.json"
+
+# Analüüsi seaded
+analysis:
+  peak_hours: [7, 8, 9, 17, 18, 19]  # Tipptunnid
+  districts: []  # Täidetakse dokkide metaandmete alusel
+
+# Aegridade ehitamise seaded
+time_series:
+  aggregation_intervals: ["1min", "5min", "15min", "1H"]
+  lookback_days: 30
