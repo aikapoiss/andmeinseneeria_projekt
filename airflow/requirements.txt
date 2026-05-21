@@ -1,6 +1,8 @@
-apache-airflow==2.7.3
+# Airflow providers (apache-airflow is already in base image)
 apache-airflow-providers-postgres==5.10.1
 apache-airflow-providers-http==4.7.1
 psycopg2-binary==2.9.9
 requests==2.31.0
 pyyaml==6.0.1
+pandas==2.1.3
+numpy==1.24.3

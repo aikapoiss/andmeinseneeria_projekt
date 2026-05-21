@@ -12,10 +12,10 @@ RUN apt-get update && \
 
 USER airflow
 
-# Copy requirements file
+# Copy and install Python dependencies
 COPY airflow/requirements.txt /tmp/requirements.txt
 
-# Install Python dependencies
+# Upgrade pip first, then install requirements
 RUN pip install --upgrade pip setuptools wheel && \
     pip install --no-cache-dir -r /tmp/requirements.txt
 
