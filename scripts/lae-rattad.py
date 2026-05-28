@@ -1,3 +1,7 @@
+# Laeb API-st jooksva seisu ja kirjutab lokaalsesse PG baasi ühte tabelisse
+# Parool ja muu baasi info on hetkel siia sisse kirjutatud
+# Vaja oleks Dockeri peale viia
+
 import os
 import requests
 import psycopg
